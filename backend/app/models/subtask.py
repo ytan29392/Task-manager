@@ -23,3 +23,9 @@ class Subtask(Base):
     note = Column(String, nullable=True)
 
     task = relationship("Task", back_populates="subtasks")
+
+
+    objective = Column(String, nullable=True)
+    notes = Column(String, nullable=True)
+    learned_summary = Column(String, nullable=True)
+    time_spent_minutes = Column(Integer, default=0)

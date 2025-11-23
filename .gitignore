@@ -1,1 +1,49 @@
-.venv
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.env
+*.venv
+venv/
+env/
+ENV/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------
+# FastAPI / general
+# -----------------------
+*.log
+*.sqlite
+.idea/
+.vscode/
+.DS_Store
+
+# -----------------------
+# Node / React
+# -----------------------
+node_modules/
+build/
+dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------
+# IDE / OS
+# -----------------------
+*.swp
+*.swo
+*.bak
+*.tmp
+Thumbs.db

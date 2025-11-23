@@ -18,6 +18,11 @@ class SubtaskUpdate(BaseModel):
     duration: Optional[float]
     status: Optional[str]
     note: Optional[str]
+    objective: Optional[str]
+    notes: Optional[str]
+    learned_summary: Optional[str]
+    time_spent_minutes: Optional[int]
+
 
 class SubtaskResponse(BaseModel):
     id: int
@@ -29,6 +34,10 @@ class SubtaskResponse(BaseModel):
     status: str
     note: Optional[str]
     task_id: int
-
+    objective: Optional[str]
+    notes: Optional[str]
+    learned_summary: Optional[str]
+    time_spent_minutes: Optional[int]
+    
     class Config:
         orm_mode = True
